@@ -244,7 +244,7 @@ const myProfile = new Profile({
     image: "/assets/icons/felixyeung.png",
     instagram: "https://www.instagram.com/felixyeung.dev/",
     linkedin: "https://www.linkedin.com/in/felixyeungdev/",
-    github: "https://github.com/felixyeung2002/",
+    github: "https://github.com/felixyeungdev/",
 });
 
 renderProjects(myProjects);
