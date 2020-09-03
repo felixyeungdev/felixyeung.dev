@@ -1,13 +1,26 @@
 class Profile {
-    constructor({ name, about, image, instagram, linkedin, github }) {
+    constructor({ name, about, image, instagram, linkedin, github, location }) {
         this.name = name;
         this.about = about;
         this.image = image;
         this.instagram = instagram;
         this.linkedin = linkedin;
         this.github = github;
+        this.location = location;
+    }
+
+    updateFromGithubJson(json = {}) {
+        if (json["name"]) this.name = json["name"];
+        if (json["avatar_url"]) this.image = json["avatar_url"];
+        if (json["location"]) this.location = json["location"];
+        if (json["bio"]) this.about = json["bio"];
+        if (json["html_url"]) this.github = json["html_url"];
     }
 }
+
+// Profile.fromGithubJson = (json) => {
+//     return new Profile({});
+// };
 
 class Project {
     constructor({
@@ -31,6 +44,7 @@ class Project {
 
 function renderProfile(profile) {
     const meSection = document.querySelector("#me");
+    meSection.innerHTML = "";
 
     function profileTemplate(profile) {
         let profileElement = document.createElement("div");
@@ -238,7 +252,7 @@ const myProjects = [
     }),
 ];
 
-const myProfile = new Profile({
+const fallbackProfile = new Profile({
     name: "Felix Yeung",
     about: "A full time student, also a programmer",
     image: "/assets/icons/felixyeung.png",
@@ -247,5 +261,23 @@ const myProfile = new Profile({
     github: "https://github.com/felixyeungdev/",
 });
 
-renderProjects(myProjects);
-renderProfile(myProfile);
+async function getGithubProfile(username) {
+    try {
+        let response = await fetch(`https://api.github.com/users/${username}`);
+        let json = await response.json();
+        return json;
+    } catch (error) {}
+}
+
+async function main() {
+    renderProjects(myProjects);
+    renderProfile(fallbackProfile);
+
+    let githubProfile = await getGithubProfile("felixyeungdev");
+    if (githubProfile) {
+        fallbackProfile.updateFromGithubJson(githubProfile);
+    }
+    renderProfile(fallbackProfile);
+}
+
+main();
