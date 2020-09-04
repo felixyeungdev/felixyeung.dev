@@ -1,5 +1,14 @@
 class Profile {
-    constructor({ name, about, image, instagram, linkedin, github, location }) {
+    constructor({
+        name,
+        about,
+        image,
+        instagram,
+        linkedin,
+        github,
+        location,
+        twitter,
+    }) {
         this.name = name;
         this.about = about;
         this.image = image;
@@ -7,6 +16,7 @@ class Profile {
         this.linkedin = linkedin;
         this.github = github;
         this.location = location;
+        this.twitter = twitter;
     }
 
     updateFromGithubJson(json = {}) {
@@ -15,6 +25,8 @@ class Profile {
         if (json["location"]) this.location = json["location"];
         if (json["bio"]) this.about = json["bio"];
         if (json["html_url"]) this.github = json["html_url"];
+        if (json["twitter_username"])
+            this.twitter = `https://twitter.com/${json["twitter_username"]}`;
     }
 }
 
@@ -89,6 +101,15 @@ function renderProfile(profile) {
             github.classList.add("fab");
             github.classList.add("fa-github");
             github.href = profile.github;
+            socialMedia.append(github);
+        }
+
+        if (profile.twitter) {
+            let github = document.createElement("a");
+            github.classList.add("profile-social_media-twitter");
+            github.classList.add("fab");
+            github.classList.add("fa-twitter");
+            github.href = profile.twitter;
             socialMedia.append(github);
         }
 
@@ -259,6 +280,7 @@ const fallbackProfile = new Profile({
     instagram: "https://www.instagram.com/felixyeung.dev/",
     linkedin: "https://www.linkedin.com/in/felixyeungdev/",
     github: "https://github.com/felixyeungdev/",
+    twitter: "https://twitter.com/felixyeungdev",
 });
 
 async function getGithubProfile(username) {
