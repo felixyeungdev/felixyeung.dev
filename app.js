@@ -275,7 +275,7 @@ const myProjects = [
 
 const fallbackProfile = new Profile({
     name: "Felix Yeung",
-    about: "A full time student, also a programmer",
+    about: "A full-time student, also a programmer",
     image: "/assets/icons/felixyeung.png",
     instagram: "https://www.instagram.com/felixyeung.dev/",
     linkedin: "https://www.linkedin.com/in/felixyeungdev/",
