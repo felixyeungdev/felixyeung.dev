@@ -273,7 +273,7 @@ const myProjects = [
     }),
 ];
 
-const fallbackProfile = new Profile({
+const myProfile = new Profile({
     name: "Felix Yeung",
     about: "A full-time student, also a programmer",
     image: "/assets/icons/felixyeung.png",
@@ -293,13 +293,13 @@ async function getGithubProfile(username) {
 
 async function main() {
     renderProjects(myProjects);
-    renderProfile(fallbackProfile);
+    renderProfile(myProfile);
 
     let githubProfile = await getGithubProfile("felixyeungdev");
     if (githubProfile) {
-        fallbackProfile.updateFromGithubJson(githubProfile);
+        myProfile.updateFromGithubJson(githubProfile);
     }
-    renderProfile(fallbackProfile);
+    renderProfile(myProfile);
 }
 
 main();
