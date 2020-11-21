@@ -245,9 +245,9 @@ const myProjects = [
     new Project({
         name: "ETS",
         description: "An HKDSE ICT SBA Project: Event Ticketing System",
+        href: "https://ets.feli.page/",
         image: "/assets/images/ets.png",
         icon: "/assets/icons/ets.png",
-        type: "private",
     }),
     new Project({
         name: "Homework",
