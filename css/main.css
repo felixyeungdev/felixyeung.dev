@@ -170,6 +170,7 @@ footer .social-media a i {
 }
 
 .button {
+  cursor: pointer;
   min-width: 48px;
   background: #f9a825;
   -webkit-transition: background 250ms ease-in-out, -webkit-box-shadow 250ms ease-in-out;
@@ -262,6 +263,38 @@ footer .social-media a i {
     display: -ms-grid;
     display: grid;
     place-items: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0e0e0e;
+    color: white;
+  }
+  .project .image-desktop {
+    -webkit-box-shadow: 0px 6px 16px black;
+            box-shadow: 0px 6px 16px black;
+  }
+  .project .image-mobile {
+    -webkit-box-shadow: 0px 6px 16px black;
+            box-shadow: 0px 6px 16px black;
+  }
+  main #hero .wrapper .social-media i {
+    color: white;
+  }
+  main #hero .wrapper .social-media i:hover {
+    color: #f9a825;
+  }
+  main #technologies ul li {
+    display: inline-block;
+    margin: 6px;
+    padding: 8px 16px;
+    border-radius: 100px;
+    background-color: #3a3a3a;
+    list-style: none;
+  }
+  main #projects .actions {
+    margin-top: 32px;
   }
 }
 /*# sourceMappingURL=main.css.map */
