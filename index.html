@@ -4,26 +4,280 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Felix Yeung</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="app.js" defer></script>
+        <link rel="stylesheet" target="_blank" href="/css/main.css" />
         <link
-            rel="shortcut icon"
-            type="image/png"
-            href="/assets/icons/felixyeung.png"
+            rel="stylesheet"
+            target="_blank"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         />
-        <script
-            src="https://kit.fontawesome.com/f583587016.js"
-            crossorigin="anonymous"
-        ></script>
     </head>
     <body>
-        <section id="me"></section>
-        <section id="projects"></section>
-        <section id="soon">
-            <div>
-                <h1>Other interesting things</h1>
-                <h3>Coming Soon</h3>
+        <header>
+            <div class="appbar">
+                <img
+                    class="appbar-logo"
+                    src="/assets/images/felixyeung.dev.svg"
+                    alt="Logo"
+                />
+                <a class="appbar-title link" target="_blank" href="/"
+                    >Felix Yeung</a
+                >
             </div>
-        </section>
+        </header>
+        <main>
+            <section id="hero" class="light-bg">
+                <div class="wrapper">
+                    <img
+                        class="hero-image"
+                        src="/assets/images/feli.page.svg"
+                        alt="Face"
+                    />
+                    <div class="hero-content">
+                        <h1>👋🏻 I’m Felix</h1>
+                        <span class="subtitle">A programmer? 🤔</span>
+                        <div class="social-media">
+                            <a
+                                class="link"
+                                target="_blank"
+                                href="https://www.instagram.com/felixyeung.dev/"
+                            >
+                                <i class="fab fa-instagram-square"></i>
+                            </a>
+                            <a
+                                class="link"
+                                target="_blank"
+                                href="https://www.linkedin.com/in/felixyeungdev/"
+                            >
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a
+                                class="link"
+                                target="_blank"
+                                href="https://github.com/felixyeungdev"
+                            >
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                            <a
+                                class="link"
+                                target="_blank"
+                                href="https://twitter.com/felixyeungdev"
+                            >
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="featured">
+                <h1>Featured</h1>
+                <div class="project">
+                    <div class="project-info">
+                        <span class="overline">Featured Project</span>
+                        <h2>Covid HK</h2>
+                        <a
+                            class="link"
+                            target="_blank"
+                            href="https://covidhk.feli.page"
+                        >
+                            covidhk.feli.page
+                        </a>
+                        <p class="project-desc">
+                            Detailed statistics for coronavirus in Hong Kong,
+                            with a searching capabilities for finding covid
+                            cases near you
+                        </p>
+                    </div>
+                    <img
+                        class="project-image image-desktop"
+                        src="/assets/images/covidhk.feli.page_1.png"
+                        alt="Covid HK"
+                    />
+                </div>
+            </section>
+            <section id="technologies" class="light-bg">
+                <h1>Technologies</h1>
+                <ul>
+                    <li>Dart</li>
+                    <li>Python</li>
+                    <li>Javascript</li>
+                    <li>Flutter</li>
+                    <li>Node.js</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SCSS</li>
+                    <li>Pascal</li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h1>My Projects</h1>
+                <div class="project">
+                    <div class="project-info">
+                        <h2>Next Train</h2>
+                        <a
+                            class="link"
+                            target="_blank"
+                            href="https://nexttrain.feli.page"
+                        >
+                            nexttrain.feli.page
+                        </a>
+                        <p class="project-desc">
+                            A redesign of MTR’s Next Train, provides realtime
+                            arrival time information
+                        </p>
+                    </div>
+                    <div class="images">
+                        <img
+                            class="project-image image-mobile"
+                            src="/assets/images/nexttrain.feli.page_1.png"
+                            alt="Next Train Image 1"
+                        />
+                        <img
+                            class="project-image image-mobile"
+                            src="/assets/images/nexttrain.feli.page_2.png"
+                            alt="Next Train Image 2"
+                        />
+                        <img
+                            class="project-image image-mobile"
+                            src="/assets/images/nexttrain.feli.page_3.png"
+                            alt="Next Train Image 3"
+                        />
+                    </div>
+                </div>
+                <div class="project reverse">
+                    <div class="project-info">
+                        <h2>Event Ticketing System</h2>
+                        <a
+                            class="link"
+                            target="_blank"
+                            href="https://nexttrain.feli.page"
+                        >
+                            ets.feli.page
+                        </a>
+                        <p class="project-desc">
+                            A school project, titled ‘Event Ticketing System’.
+                            Mainly written in Pascal, Dart, and Javascript
+                        </p>
+                    </div>
+                    <div class="images">
+                        <img
+                            class="project-image image-mobile"
+                            src="/assets/images/ets.feli.page_1.png"
+                            alt="ETS Image 1"
+                        />
+                        <img
+                            class="project-image image-mobile"
+                            src="/assets/images/ets.feli.page_2.png"
+                            alt="ETS Image 2"
+                        />
+                        <img
+                            class="project-image image-mobile"
+                            src="/assets/images/ets.feli.page_3.png"
+                            alt="ETS Image 3"
+                        />
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-info">
+                        <h2>Homework</h2>
+                        <a
+                            class="link"
+                            target="_blank"
+                            href="https://nexttrain.feli.page"
+                        >
+                            hw.feli.page
+                        </a>
+                        <p class="project-desc">
+                            A homework app integrated with Google Calendar
+                        </p>
+                    </div>
+                    <div class="images">
+                        <img
+                            class="project-image image-mobile"
+                            src="/assets/images/hw.feli.page_1.png"
+                            alt="Homework Image 1"
+                        />
+                        <img
+                            class="project-image image-mobile"
+                            src="/assets/images/hw.feli.page_2.png"
+                            alt="Homework Image 2"
+                        />
+                        <img
+                            class="project-image image-mobile"
+                            src="/assets/images/hw.feli.page_3.png"
+                            alt="Homework Image 3"
+                        />
+                    </div>
+                </div>
+                <div class="project reverse">
+                    <div class="project-info">
+                        <h2>Feli URL Shortener</h2>
+                        <a
+                            class="link"
+                            target="_blank"
+                            href="https://covidhk.feli.page"
+                        >
+                            url.feli.page
+                        </a>
+                        <p class="project-desc">
+                            Simple URL shortener app with chrome extension
+                            available
+                        </p>
+                    </div>
+                    <img
+                        class="project-image image-desktop"
+                        src="/assets/images/url.feli.page_1.png"
+                        alt="URL Shortener Image"
+                    />
+                </div>
+                <div class="actions">
+                    <div class="view-more button">
+                        <a
+                            class="link"
+                            target="_blank"
+                            href="https://github.com/felixyeungdev"
+                        >
+                            More on GitHub
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h1>Contact</h1>
+            <h2>Get in touch!</h2>
+            <a class="link" target="_blank" href="mailto:mail@felixyeung.dev"
+                >mail@felixyeung.dev</a
+            >
+            <div class="social-media">
+                <a
+                    class="link"
+                    target="_blank"
+                    href="https://www.instagram.com/felixyeung.dev/"
+                >
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+                <a
+                    class="link"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/felixyeungdev/"
+                >
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                    class="link"
+                    target="_blank"
+                    href="https://github.com/felixyeungdev"
+                >
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a
+                    class="link"
+                    target="_blank"
+                    href="https://twitter.com/felixyeungdev"
+                >
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+            </div>
+        </footer>
     </body>
 </html>
