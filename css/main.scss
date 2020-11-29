@@ -8,6 +8,7 @@ $overline-font-size: calc(24px * #{$screen-ratio});
 $link-font-size: calc(32px * #{$screen-ratio});
 $body-font-size: calc(32px * #{$screen-ratio});
 $subtitle-font-size: calc(50px * #{$screen-ratio});
+$social-media-font-size: 40px;
 $color-dark: #0e0e0e;
 
 * {
@@ -92,9 +93,9 @@ h2 {
 
 .social-media {
     a {
-        margin-right: 40px;
+        margin-right: $social-media-font-size;
         i {
-            font-size: 40px;
+            font-size: $social-media-font-size;
             color: black;
             transition: color 250ms ease-in-out, transform 250ms ease-in-out;
         }
@@ -255,6 +256,93 @@ footer {
             .actions {
                 display: grid;
                 place-items: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    $screen-ratio: 0.75;
+    $appbar-title-font-size: calc(50px * #{$screen-ratio});
+    $heading-1-font-size: calc(100px * #{$screen-ratio});
+    $heading-2-font-size: calc(60px * #{$screen-ratio});
+    $overline-font-size: calc(24px * #{$screen-ratio});
+    $link-font-size: calc(32px * #{$screen-ratio});
+    $body-font-size: calc(32px * #{$screen-ratio});
+    $subtitle-font-size: calc(50px * #{$screen-ratio});
+    $social-media-font-size: 40px;
+    * {
+        font-size: $body-font-size;
+    }
+
+    .link {
+        font-size: $link-font-size;
+    }
+
+    h1 {
+        font-size: $heading-1-font-size;
+    }
+
+    h2 {
+        font-size: $heading-2-font-size;
+    }
+
+    .subtitle {
+        font-size: $subtitle-font-size;
+    }
+
+    .overline {
+        font-size: $overline-font-size;
+    }
+    .social-media {
+        a {
+            margin-right: $social-media-font-size;
+            i {
+                font-size: $social-media-font-size;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    $screen-ratio: 1;
+    $appbar-title-font-size: calc(50px * #{$screen-ratio});
+    $heading-1-font-size: calc(100px * #{$screen-ratio});
+    $heading-2-font-size: calc(60px * #{$screen-ratio});
+    $overline-font-size: calc(24px * #{$screen-ratio});
+    $link-font-size: calc(32px * #{$screen-ratio});
+    $body-font-size: calc(32px * #{$screen-ratio});
+    $subtitle-font-size: calc(50px * #{$screen-ratio});
+    $social-media-font-size: 40px;
+
+    * {
+        font-size: $body-font-size;
+    }
+
+    .link {
+        font-size: $link-font-size;
+    }
+
+    h1 {
+        font-size: $heading-1-font-size;
+    }
+
+    h2 {
+        font-size: $heading-2-font-size;
+    }
+
+    .subtitle {
+        font-size: $subtitle-font-size;
+    }
+
+    .overline {
+        font-size: $overline-font-size;
+    }
+    .social-media {
+        a {
+            margin-right: $social-media-font-size;
+            i {
+                font-size: $social-media-font-size;
             }
         }
     }

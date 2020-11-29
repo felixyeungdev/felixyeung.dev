@@ -266,6 +266,60 @@ footer .social-media a i {
   }
 }
 
+@media only screen and (min-width: 1500px) {
+  * {
+    font-size: calc(32px * 0.75);
+  }
+  .link {
+    font-size: calc(32px * 0.75);
+  }
+  h1 {
+    font-size: calc(100px * 0.75);
+  }
+  h2 {
+    font-size: calc(60px * 0.75);
+  }
+  .subtitle {
+    font-size: calc(50px * 0.75);
+  }
+  .overline {
+    font-size: calc(24px * 0.75);
+  }
+  .social-media a {
+    margin-right: 40px;
+  }
+  .social-media a i {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  * {
+    font-size: calc(32px * 1);
+  }
+  .link {
+    font-size: calc(32px * 1);
+  }
+  h1 {
+    font-size: calc(100px * 1);
+  }
+  h2 {
+    font-size: calc(60px * 1);
+  }
+  .subtitle {
+    font-size: calc(50px * 1);
+  }
+  .overline {
+    font-size: calc(24px * 1);
+  }
+  .social-media a {
+    margin-right: 40px;
+  }
+  .social-media a i {
+    font-size: 40px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #0e0e0e;
