@@ -8,7 +8,7 @@ $overline-font-size: calc(24px * #{$screen-ratio});
 $link-font-size: calc(32px * #{$screen-ratio});
 $body-font-size: calc(32px * #{$screen-ratio});
 $subtitle-font-size: calc(50px * #{$screen-ratio});
-$social-media-font-size: 40px;
+$social-media-font-size: calc(80px * #{$screen-ratio});
 $color-dark: #0e0e0e;
 
 * {
@@ -17,6 +17,7 @@ $color-dark: #0e0e0e;
     padding: 0;
     box-sizing: border-box;
     font-size: $body-font-size;
+    transition: font-size 250ms ease-in-out;
 }
 
 body {
@@ -135,7 +136,17 @@ main {
         place-items: center;
         .wrapper {
             .hero-image {
+                margin-top: 32px;
+                margin-bottom: 32px;
                 width: 35vw;
+                height: auto;
+            }
+            .hero-content {
+                .subtitle {
+                    display: block;
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+                }
             }
         }
     }
@@ -159,7 +170,7 @@ main {
 }
 
 footer {
-    padding: 20px 10px;
+    padding: 48px 10px;
     text-align: center;
     background: #000000;
     color: white;
@@ -262,7 +273,7 @@ footer {
 }
 
 @media only screen and (min-width: 1500px) {
-    $screen-ratio: 0.75;
+    $screen-ratio: 0.65;
     $appbar-title-font-size: calc(50px * #{$screen-ratio});
     $heading-1-font-size: calc(100px * #{$screen-ratio});
     $heading-2-font-size: calc(60px * #{$screen-ratio});
@@ -270,7 +281,7 @@ footer {
     $link-font-size: calc(32px * #{$screen-ratio});
     $body-font-size: calc(32px * #{$screen-ratio});
     $subtitle-font-size: calc(50px * #{$screen-ratio});
-    $social-media-font-size: 40px;
+    $social-media-font-size: calc(80px * #{$screen-ratio});
     * {
         font-size: $body-font-size;
     }
@@ -305,7 +316,7 @@ footer {
 }
 
 @media only screen and (min-width: 2000px) {
-    $screen-ratio: 1;
+    $screen-ratio: 0.8;
     $appbar-title-font-size: calc(50px * #{$screen-ratio});
     $heading-1-font-size: calc(100px * #{$screen-ratio});
     $heading-2-font-size: calc(60px * #{$screen-ratio});
@@ -313,7 +324,7 @@ footer {
     $link-font-size: calc(32px * #{$screen-ratio});
     $body-font-size: calc(32px * #{$screen-ratio});
     $subtitle-font-size: calc(50px * #{$screen-ratio});
-    $social-media-font-size: 40px;
+    $social-media-font-size: calc(80px * #{$screen-ratio});
 
     * {
         font-size: $body-font-size;
