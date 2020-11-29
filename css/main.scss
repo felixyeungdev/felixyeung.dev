@@ -8,6 +8,7 @@ $overline-font-size: calc(24px * #{$screen-ratio});
 $link-font-size: calc(32px * #{$screen-ratio});
 $body-font-size: calc(32px * #{$screen-ratio});
 $subtitle-font-size: calc(50px * #{$screen-ratio});
+$color-dark: #0e0e0e;
 
 * {
     font-family: "Quicksand", sans-serif;
@@ -261,7 +262,7 @@ footer {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background: #0e0e0e;
+        background: $color-dark;
         color: white;
     }
 
@@ -305,5 +306,60 @@ footer {
                 margin-top: 32px;
             }
         }
+    }
+}
+
+.hero-image {
+    #eyes {
+        #eye-right {
+            animation: 3s infinite alternate ease-in-out eye-right-move;
+        }
+        #eye-left {
+            animation: 3s infinite alternate ease-in-out eye-left-move;
+        }
+        #eye-left {
+            animation: 3s infinite alternate ease-in-out eye-left-move;
+        }
+    }
+    #mouth {
+        #mouth-top {
+            animation: 3s infinite alternate ease-in-out mouth-top-move;
+        }
+        #mouth-bottom {
+            animation: 3s infinite alternate ease-in-out mouth-bottom-move;
+        }
+    }
+}
+
+@keyframes eye-right-move {
+    0% {
+        transform: translate(180px, 66px) rotate(-90deg);
+    }
+    100% {
+        transform: translate(90px, 66px) rotate(-90deg);
+    }
+}
+@keyframes eye-left-move {
+    0% {
+        transform: translate(90px, 66px) rotate(-90deg);
+    }
+    100% {
+        transform: translate(0px, 66px) rotate(-90deg);
+    }
+}
+@keyframes mouth-top-move {
+    0% {
+        transform: translate(90px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+@keyframes mouth-bottom-move {
+    0% {
+        transform: translate(90px, 10px);
+    }
+    100% {
+        transform: translate(0px, 10px);
     }
 }
