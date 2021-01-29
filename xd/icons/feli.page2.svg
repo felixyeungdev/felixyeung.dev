@@ -1,0 +1,20 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg" width="336" height="336" viewBox="0 0 336 336">
+    <g id="feli.page" transform="translate(-88 -88)">
+        <g id="face">
+            <rect id="face-colour" width="336" height="336" rx="100" transform="translate(88 88)" fill="#f9a828"/>
+            <rect id="face-white" width="272" height="272" rx="68" transform="translate(120 120)" fill="#fff"/>
+        </g>
+        <g id="eyes" transform="translate(0 5)">
+            <path id="eyebrows-right" d="M0,0H0A10,10,0,0,1,10,10v0A10,10,0,0,1,0,20H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(256 175)" fill="rgba(249,168,40,0.25)"/>
+            <path id="eyebrows-left" d="M10,0h0a0,0,0,0,1,0,0V20a0,0,0,0,1,0,0h0A10,10,0,0,1,0,10v0A10,10,0,0,1,10,0Z" transform="translate(156 175)" fill="rgba(249,168,40,0.25)"/>
+            <rect id="eye-right" width="66" height="20" rx="10" transform="translate(246 241) rotate(-90)" fill="#f9a828"/>
+            <rect id="eye-left" width="66" height="20" rx="10" transform="translate(156 241) rotate(-90)" fill="#f9a828"/>
+        </g>
+        <g id="mouth" transform="translate(0 6)">
+            <rect id="mouth-shadow" width="108" height="20" rx="10" transform="translate(156 260)" fill="rgba(249,168,40,0.25)"/>
+            <rect id="mouth-top" width="110" height="20" rx="10" transform="translate(156 260)" fill="#f9a828"/>
+            <path id="mouth-bottom" d="M0,0H110a0,0,0,0,1,0,0V24A32,32,0,0,1,78,56H32A32,32,0,0,1,0,24V0A0,0,0,0,1,0,0Z" transform="translate(156 270)" fill="#f9a828"/>
+        </g>
+    </g>
+</svg>
