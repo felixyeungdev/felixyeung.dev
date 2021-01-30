@@ -3,13 +3,16 @@ module.exports = {
         "./pages/**/*.{js,ts,jsx,tsx}",
         "./components/**/*.{js,ts,jsx,tsx}",
     ],
-    darkMode: false, // or 'media' or 'class'
+    darkMode: "media", // or 'media' or 'class'
     theme: {
         extend: {
             colors: {
                 feli: {
                     DEFAULT: "#f9a828",
                     light: "rgba(249, 168, 37, 0.1)",
+                },
+                dark: {
+                    DEFAULT: "#0F0F0F",
                 },
             },
             minHeight: {
