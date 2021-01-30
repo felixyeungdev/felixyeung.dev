@@ -63,6 +63,7 @@ const Project = ({ project, featured = false, reverse }: ProjectProps) => {
                                 layout="responsive"
                                 height={singleImage ? 1440 : 1919}
                                 width={singleImage ? 2560 : 1079}
+                                quality={100}
                             />
                         </div>
                     </div>
