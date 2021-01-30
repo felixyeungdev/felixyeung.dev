@@ -25,7 +25,7 @@ export default function Home() {
                         <div className="flex justify-center md:block">
                             <Icon className="h-48 w-48" />
                         </div>
-                        <div className="md:ml-8 flex flex-col justify-center">
+                        <div className="sm:ml-8 flex flex-col justify-center">
                             <h1 className="text-6xl my-2 font-bold text-center sm:text-left">
                                 👋🏻 I’m Felix
                             </h1>
