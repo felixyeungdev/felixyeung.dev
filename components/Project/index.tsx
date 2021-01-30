@@ -42,7 +42,7 @@ const Project = ({ project, featured = false, reverse }: ProjectProps) => {
                 >
                     {beautifyLinks(project.link)}
                 </a>
-                <p className="lg:mt-4 lg:w-10/12 text-center lg:text-left">
+                <p className="lg:mt-4 lg:w-10/12 text-center lg:text-left text-lg lg:text-xl">
                     {project.description}
                 </p>
             </div>
