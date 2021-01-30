@@ -50,9 +50,13 @@ const Project = ({ project, featured = false, reverse }: ProjectProps) => {
                 {project.images.map((img, i) => (
                     <div
                         key={img}
-                        className={singleImage ? "p-2 w-full" : "p-2 w-1/3"}
+                        className={
+                            singleImage
+                                ? "p-1 lg:p-2 w-full"
+                                : "p-1 lg:p-2 w-1/3"
+                        }
                     >
-                        <div className="rounded-xl shadow-xl w-full overflow-hidden">
+                        <div className="rounded-lg lg:rounded-xl shadow-lg lg:shadow-lg w-full overflow-hidden">
                             <Image
                                 src={img}
                                 alt={`${project.name} screenshot ${i + 1}`}
