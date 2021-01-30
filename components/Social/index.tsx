@@ -1,8 +1,7 @@
-import { githubUrl } from "@links/index";
-import { linkedinUrl } from "@links/index";
-import { instagramUrl } from "@links/index";
-import { twitterUrl } from "@links/index";
+import { githubUrl, linkedinUrl, instagramUrl, twitterUrl } from "@links/index";
+import { motion } from "framer-motion";
 import React from "react";
+import { IconType } from "react-icons";
 import {
     RiGithubFill,
     RiInstagramFill,
@@ -13,39 +12,51 @@ import {
 const Social = () => {
     return (
         <>
-            <a
-                className="hover:text-feli transition-colors mr-2"
-                href={instagramUrl}
-                target="_blank"
-                rel="noreferrer"
-            >
-                <RiInstagramFill size={36} />
-            </a>
-            <a
-                className="hover:text-feli transition-colors mx-2"
-                href={linkedinUrl}
-                target="_blank"
-                rel="noreferrer"
-            >
-                <RiLinkedinBoxFill size={36} />{" "}
-            </a>
-            <a
-                className="hover:text-feli transition-colors mx-2"
-                href={githubUrl}
-                target="_blank"
-                rel="noreferrer"
-            >
-                <RiGithubFill size={36} />{" "}
-            </a>
-            <a
-                className="hover:text-feli transition-colors mx-2"
-                href={twitterUrl}
-                target="_blank"
-                rel="noreferrer"
-            >
-                <RiTwitterFill size={36} />{" "}
-            </a>
+            <LinkedIcon
+                url={instagramUrl}
+                Icon={RiInstagramFill}
+                className="mr-2"
+            />
+            <LinkedIcon url={linkedinUrl} Icon={RiLinkedinBoxFill} />
+            <LinkedIcon url={githubUrl} Icon={RiGithubFill} />
+            <LinkedIcon url={twitterUrl} Icon={RiTwitterFill} />
         </>
+    );
+};
+
+interface LinkedIconProps {
+    url: string;
+    Icon: IconType;
+    className?: string;
+}
+
+const iconVariants = {
+    animate: {
+        opacity: 1,
+    },
+    tap: {
+        scale: 0.9,
+    },
+    hover: {
+        scale: 1.1,
+    },
+};
+
+const LinkedIcon = ({ url, Icon, className = "mx-2" }: LinkedIconProps) => {
+    return (
+        <motion.a
+            className={`hover:text-feli transition-colors ${className}`}
+            href={url}
+            target="_blank"
+            rel="noreferrer"
+            variants={iconVariants}
+            initial={false}
+            animate="animate"
+            whileTap="tap"
+            whileHover="hover"
+        >
+            <Icon size={36} />
+        </motion.a>
     );
 };
 
