@@ -8,10 +8,10 @@ const Footer = () => {
             <a
                 className="text-feli my-1"
                 target="_blank"
-                href="mailto:mail@felixyeung.dev"
+                href="mailto:hi@felixyeung.dev"
                 rel="noreferrer"
             >
-                mail@felixyeung.dev
+                hi@felixyeung.dev
             </a>
             <div className="flex my-1">
                 <Social />
