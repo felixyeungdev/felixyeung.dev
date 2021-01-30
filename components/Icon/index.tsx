@@ -1,12 +1,13 @@
 interface IconProps {
     className?: string;
+    fixed?: boolean;
 }
 
-const Icon = ({ className = "" }: IconProps) => {
+const Icon = ({ className = "", fixed = false }: IconProps) => {
     return (
         <div className={className}>
             <svg
-                className="hero-image"
+                className={fixed ? "" : "hero-image"}
                 id="feli.page"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 336 336"
