@@ -1,8 +1,12 @@
 import Social from "@components/Social";
+import { motion } from "framer-motion";
 
 const Footer = () => {
     return (
-        <div className="h-72 bg-black flex flex-col items-center justify-center text-white">
+        <motion.div
+            className="h-72 bg-black flex flex-col items-center justify-center text-white"
+            layoutId="footer"
+        >
             <h1 className="text-6xl my-2 font-bold">Contact</h1>
             <h2 className="text-3xl my-1 font-bold">Get in touch!</h2>
             <a
@@ -16,7 +20,7 @@ const Footer = () => {
             <div className="flex my-1">
                 <Social />
             </div>
-        </div>
+        </motion.div>
     );
 };
 
