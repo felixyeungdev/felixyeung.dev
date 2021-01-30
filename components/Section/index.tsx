@@ -8,11 +8,11 @@ const Section = ({ children, light = false }: SectionProps) => {
         <section
             className={
                 light
-                    ? "p-6 sm:p-8 md:p-12 bg-feli-light"
-                    : "p-6 sm:p-8 md:p-12"
+                    ? "py-6 sm:py-8 md:py-12 bg-feli-light"
+                    : "py-6 sm:py-8 md:py-12"
             }
         >
-            {children}
+            <div className="container mx-auto">{children}</div>
         </section>
     );
 };
