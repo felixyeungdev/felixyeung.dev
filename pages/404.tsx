@@ -1,7 +1,6 @@
 import Button from "@components/Button";
 import Content from "@components/Content";
 import SiteHead from "@components/Head";
-import { projects } from "@data/projects";
 import React from "react";
 
 export default function Home() {
