@@ -3,7 +3,7 @@ interface ContentProps {
 }
 
 const Content = ({ children }: ContentProps) => {
-    return <div className="">{children}</div>;
+    return <main className="">{children}</main>;
 };
 
 export default Content;

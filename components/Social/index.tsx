@@ -16,24 +16,28 @@ const Social = () => {
             <a
                 className="hover:text-feli transition-colors mr-2"
                 href={instagramUrl}
+                target="_blank"
             >
                 <RiInstagramFill size={36} />
             </a>
             <a
                 className="hover:text-feli transition-colors mx-2"
                 href={linkedinUrl}
+                target="_blank"
             >
                 <RiLinkedinBoxFill size={36} />{" "}
             </a>
             <a
                 className="hover:text-feli transition-colors mx-2"
                 href={githubUrl}
+                target="_blank"
             >
                 <RiGithubFill size={36} />{" "}
             </a>
             <a
                 className="hover:text-feli transition-colors mx-2"
                 href={twitterUrl}
+                target="_blank"
             >
                 <RiTwitterFill size={36} />{" "}
             </a>
