@@ -17,6 +17,7 @@ const Social = () => {
                 className="hover:text-feli transition-colors mr-2"
                 href={instagramUrl}
                 target="_blank"
+                rel="noreferrer"
             >
                 <RiInstagramFill size={36} />
             </a>
@@ -24,6 +25,7 @@ const Social = () => {
                 className="hover:text-feli transition-colors mx-2"
                 href={linkedinUrl}
                 target="_blank"
+                rel="noreferrer"
             >
                 <RiLinkedinBoxFill size={36} />{" "}
             </a>
@@ -31,6 +33,7 @@ const Social = () => {
                 className="hover:text-feli transition-colors mx-2"
                 href={githubUrl}
                 target="_blank"
+                rel="noreferrer"
             >
                 <RiGithubFill size={36} />{" "}
             </a>
@@ -38,6 +41,7 @@ const Social = () => {
                 className="hover:text-feli transition-colors mx-2"
                 href={twitterUrl}
                 target="_blank"
+                rel="noreferrer"
             >
                 <RiTwitterFill size={36} />{" "}
             </a>

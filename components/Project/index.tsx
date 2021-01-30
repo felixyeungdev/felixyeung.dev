@@ -37,6 +37,7 @@ const Project = ({ project, featured = false, reverse }: ProjectProps) => {
                     className="text-feli text-center md:text-left"
                     target="_blank"
                     href={project.link}
+                    rel="noreferrer"
                 >
                     {beautifyLinks(project.link)}
                 </a>

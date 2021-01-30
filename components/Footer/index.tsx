@@ -9,6 +9,7 @@ const Footer = () => {
                 className="text-feli my-1"
                 target="_blank"
                 href="mailto:mail@felixyeung.dev"
+                rel="noreferrer"
             >
                 mail@felixyeung.dev
             </a>
