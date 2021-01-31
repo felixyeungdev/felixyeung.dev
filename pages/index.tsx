@@ -6,11 +6,10 @@ import Project from "@components/Project";
 import Section from "@components/Section";
 import SectionTitle from "@components/Section/title";
 import Social from "@components/Social";
-import Timeline from "@components/Timeline";
 import { projects } from "@data/projects";
-import { technologies } from "@data/technologies";
 import { gitHubUrl } from "@links/index";
 import React from "react";
+import TechnologiesPage from "./technologies";
 
 const _projects = [...projects];
 const featuredProject = _projects.shift();
@@ -42,19 +41,7 @@ export default function Home() {
                     <SectionTitle>Featured</SectionTitle>
                     <Project project={featuredProject} featured />
                 </Section>
-                <Section light>
-                    <SectionTitle>Technologies</SectionTitle>
-                    <div className="mt-6">
-                        <Timeline data={technologies} />
-                    </div>
-                    {/* <div className="flex flex-wrap">
-                        {technologies
-                            .map((tech) => tech.name)
-                            .map((tech) => (
-                                <Chip label={tech} key={tech} />
-                            ))}
-                    </div> */}
-                </Section>
+                <TechnologiesPage />
                 <Section>
                     <SectionTitle>Projects</SectionTitle>
                     <>
