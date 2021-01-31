@@ -4,15 +4,17 @@ import Timeline from "@components/Timeline";
 import { technologies } from "@data/technologies";
 import React from "react";
 
-const Test = () => {
+const TechnologiesPage = () => {
     return (
         <>
             <Section light>
                 <SectionTitle>Technologies</SectionTitle>
-                <Timeline data={technologies} />
+                <div className="mt-6 ml-2">
+                    <Timeline data={technologies} />
+                </div>
             </Section>
         </>
     );
 };
 
-export default Test;
+export default TechnologiesPage;
