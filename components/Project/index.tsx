@@ -58,7 +58,7 @@ const Project = ({ project, featured = false, reverse }: ProjectProps) => {
                                 : "p-1 lg:p-2 w-1/3"
                         }
                     >
-                        <div className="rounded-lg lg:rounded-xl shadow-lg lg:shadow-lg w-full overflow-hidden">
+                        <div className="rounded-lg lg:rounded-xl shadow-md lg:shadow-lg w-full overflow-hidden">
                             <Image
                                 src={img}
                                 alt={`${project.name} screenshot ${i + 1}`}
