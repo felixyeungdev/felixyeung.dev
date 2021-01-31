@@ -10,6 +10,7 @@ module.exports = {
                 feli: {
                     DEFAULT: "#f9a828",
                     light: "rgba(249, 168, 37, 0.1)",
+                    dark: "#c17900",
                 },
                 dark: {
                     DEFAULT: "#0F0F0F",
@@ -45,7 +46,10 @@ module.exports = {
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            boxShadow: ["active"],
+            backgroundColor: ["active"],
+        },
     },
     plugins: [],
 };
