@@ -1,6 +1,7 @@
 import { Project as ProjectType } from "@interfaces/index";
 import Image from "next/image";
 import beautifyLinks from "utils/beautifyLinks";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 interface ProjectProps {
     project?: ProjectType;
@@ -35,12 +36,13 @@ const Project = ({ project, featured = false, reverse }: ProjectProps) => {
                     {project.name}
                 </h2>
                 <a
-                    className="text-feli text-center lg:text-left"
+                    className="text-feli-darker hover:text-feli-dark active:text-feli dark:text-feli-lighter dark:hover:text-feli-light text-center lg:text-left flex items-center justify-center lg:justify-start transition-colors"
                     target="_blank"
                     href={project.link}
                     rel="noreferrer"
                 >
                     {beautifyLinks(project.link)}
+                    <HiOutlineExternalLink className="ml-2" />
                 </a>
                 <p className="lg:mt-4 lg:w-10/12 text-center lg:text-left text-lg lg:text-xl">
                     {project.description}

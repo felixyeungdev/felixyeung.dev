@@ -20,7 +20,7 @@ export default function Home() {
         <>
             <SiteHead />
             <Content>
-                <section className="min-h-screen-3/4 flex items-center justify-center bg-feli-light">
+                <section className="min-h-screen-3/4 flex items-center justify-center bg-feli-opacity-100">
                     <div className="sm:flex">
                         <div className="flex justify-center md:block">
                             <Icon className="h-48 w-48" />

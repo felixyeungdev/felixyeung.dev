@@ -8,7 +8,7 @@ export default function Home() {
         <>
             <SiteHead />
             <Content>
-                <section className="min-h-screen-3/4 flex flex-col items-center justify-center bg-feli-light">
+                <section className="min-h-screen-3/4 flex flex-col items-center justify-center bg-feli-opacity-100">
                     <h1 className="text-6xl py-2">404</h1>
                     <h2 className="text-4xl pb-4">
                         This page could not be found

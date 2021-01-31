@@ -8,7 +8,7 @@ const Section = ({ children, light = false }: SectionProps) => {
         <section
             className={
                 light
-                    ? "py-6 sm:py-8 md:py-12 bg-feli-light"
+                    ? "py-6 sm:py-8 md:py-12 bg-feli-opacity-100"
                     : "py-6 sm:py-8 md:py-12"
             }
         >
