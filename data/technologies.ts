@@ -50,11 +50,11 @@ const technologies: Technologies = [
         date: new Date("2020/07/29"),
         url: "https://www.freepascal.org/",
     },
-    {
-        name: "Go Lang",
-        date: new Date("2020/08/11"),
-        url: "https://golang.org/",
-    },
+    // {
+    //     name: "Go Lang",
+    //     date: new Date("2020/08/11"),
+    //     url: "https://golang.org/",
+    // },
     {
         name: "Teachable Machine",
         date: new Date("2020/09/06"),
