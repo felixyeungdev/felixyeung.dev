@@ -9,7 +9,7 @@ import SectionTitle from "@components/Section/title";
 import Social from "@components/Social";
 import { projects } from "@data/projects";
 import { technologies } from "@data/technologies";
-import { githubUrl } from "@links/index";
+import { gitHubUrl } from "@links/index";
 import React from "react";
 
 const _projects = [...projects];
@@ -62,7 +62,7 @@ export default function Home() {
                         ))}
                     </>
                     <div className="flex justify-center">
-                        <Button href={githubUrl} targetBlank>
+                        <Button href={gitHubUrl} targetBlank>
                             More on GitHub
                         </Button>
                     </div>

@@ -1,4 +1,4 @@
-import { githubUrl, linkedinUrl, instagramUrl, twitterUrl } from "@links/index";
+import { gitHubUrl, linkedInUrl, instagramUrl, twitterUrl } from "@links/index";
 import { motion } from "framer-motion";
 import React from "react";
 import { IconType } from "react-icons";
@@ -16,10 +16,15 @@ const Social = () => {
                 url={instagramUrl}
                 Icon={RiInstagramFill}
                 className="mr-2"
+                label="Instagram"
             />
-            <LinkedIcon url={linkedinUrl} Icon={RiLinkedinBoxFill} />
-            <LinkedIcon url={githubUrl} Icon={RiGithubFill} />
-            <LinkedIcon url={twitterUrl} Icon={RiTwitterFill} />
+            <LinkedIcon
+                url={linkedInUrl}
+                Icon={RiLinkedinBoxFill}
+                label="LinkedIn"
+            />
+            <LinkedIcon url={gitHubUrl} Icon={RiGithubFill} label="GitHub" />
+            <LinkedIcon url={twitterUrl} Icon={RiTwitterFill} label="Twitter" />
         </>
     );
 };
@@ -28,6 +33,7 @@ interface LinkedIconProps {
     url: string;
     Icon: IconType;
     className?: string;
+    label: string;
 }
 
 const iconVariants = {
@@ -42,7 +48,12 @@ const iconVariants = {
     },
 };
 
-const LinkedIcon = ({ url, Icon, className = "mx-2" }: LinkedIconProps) => {
+const LinkedIcon = ({
+    url,
+    Icon,
+    className = "mx-2",
+    label,
+}: LinkedIconProps) => {
     return (
         <motion.a
             className={`hover:text-feli transition-colors ${className}`}
@@ -54,6 +65,7 @@ const LinkedIcon = ({ url, Icon, className = "mx-2" }: LinkedIconProps) => {
             animate="animate"
             whileTap="tap"
             whileHover="hover"
+            aria-label={label}
         >
             <Icon size={36} />
         </motion.a>
