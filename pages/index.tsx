@@ -1,5 +1,4 @@
 import Button from "@components/Button";
-import Chip from "@components/Chip";
 import Content from "@components/Content";
 import SiteHead from "@components/Head";
 import Icon from "@components/Icon";
@@ -7,6 +6,7 @@ import Project from "@components/Project";
 import Section from "@components/Section";
 import SectionTitle from "@components/Section/title";
 import Social from "@components/Social";
+import Timeline from "@components/Timeline";
 import { projects } from "@data/projects";
 import { technologies } from "@data/technologies";
 import { gitHubUrl } from "@links/index";
@@ -44,11 +44,16 @@ export default function Home() {
                 </Section>
                 <Section light>
                     <SectionTitle>Technologies</SectionTitle>
-                    <div className="flex flex-wrap">
-                        {technologies.map((tech) => (
-                            <Chip label={tech} key={tech} />
-                        ))}
+                    <div className="mt-6">
+                        <Timeline data={technologies} />
                     </div>
+                    {/* <div className="flex flex-wrap">
+                        {technologies
+                            .map((tech) => tech.name)
+                            .map((tech) => (
+                                <Chip label={tech} key={tech} />
+                            ))}
+                    </div> */}
                 </Section>
                 <Section>
                     <SectionTitle>Projects</SectionTitle>

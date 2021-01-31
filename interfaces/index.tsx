@@ -1,4 +1,8 @@
-export type Technology = string;
+export type Technology = {
+    name: string;
+    date: Date;
+    url: string;
+};
 export type Technologies = Technology[];
 
 export type Project = {
