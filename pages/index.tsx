@@ -1,13 +1,13 @@
-import Button from "@components/Button";
-import Content from "@components/Content";
-import SiteHead from "@components/Head";
-import Icon from "@components/Icon";
-import Project from "@components/Project";
-import Section from "@components/Section";
-import SectionTitle from "@components/Section/title";
-import Social from "@components/Social";
-import { projects } from "@data/projects";
-import { gitHubUrl } from "@links/index";
+import Button from "@/components/Button";
+import Content from "@/components/Content";
+import SiteHead from "@/components/Head";
+import Icon from "@/components/Icon";
+import Project from "@/components/Project";
+import Section from "@/components/Section";
+import SectionTitle from "@/components/Section/title";
+import Social from "@/components/Social";
+import { projects } from "@/data/projects";
+import { gitHubUrl } from "@/links/index";
 import React from "react";
 import TechnologiesPage from "./technologies";
 

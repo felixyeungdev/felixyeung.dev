@@ -1,4 +1,4 @@
-import { Technologies } from "@interfaces/index";
+import { Technologies } from "@/interfaces/index";
 const technologies: Technologies = [
     {
         name: "HTML",

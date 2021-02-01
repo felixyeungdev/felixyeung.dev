@@ -19,11 +19,11 @@
         "target": "esnext",
         "baseUrl": "./",
         "paths": {
-            "@components/*": ["components/*"],
-            "@styles/*": ["styles/*"],
-            "@links/*": ["links/*"],
-            "@data/*": ["data/*"],
-            "@interfaces/*": ["interfaces/*"]
+            "@/components/*": ["components/*"],
+            "@/styles/*": ["styles/*"],
+            "@/links/*": ["links/*"],
+            "@/data/*": ["data/*"],
+            "@/interfaces/*": ["interfaces/*"]
         }
     },
     "exclude": ["node_modules"],

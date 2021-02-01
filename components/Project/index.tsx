@@ -1,4 +1,4 @@
-import { Project as ProjectType } from "@interfaces/index";
+import { Project as ProjectType } from "@/interfaces/index";
 import Image from "next/image";
 import beautifyLinks from "utils/beautifyLinks";
 import { HiOutlineExternalLink } from "react-icons/hi";

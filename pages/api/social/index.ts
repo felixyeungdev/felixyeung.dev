@@ -4,7 +4,7 @@ import {
     linkedInUrl as linkedIn,
     gitHubUrl as gitHub,
     twitterUrl as twitter,
-} from "@links/index";
+} from "@/links/index";
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
     res.status(200).json({

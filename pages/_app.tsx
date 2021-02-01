@@ -1,5 +1,5 @@
-import Layout from "@components/Layout";
-import "@styles/global.scss";
+import Layout from "@/components/Layout";
+import "@/styles/global.scss";
 import React from "react";
 import "tailwindcss/tailwind.css";
 import type { AppProps } from "next/app";

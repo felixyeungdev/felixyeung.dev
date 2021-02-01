@@ -1,4 +1,4 @@
-import Social from "@components/Social";
+import Social from "@/components/Social";
 import { motion } from "framer-motion";
 
 const Footer = () => {

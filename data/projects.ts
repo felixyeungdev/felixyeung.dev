@@ -1,4 +1,4 @@
-import { Projects } from "@interfaces/index";
+import { Projects } from "@/interfaces/index";
 
 const projects: Projects = [
     {

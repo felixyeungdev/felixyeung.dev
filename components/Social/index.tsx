@@ -1,4 +1,9 @@
-import { gitHubUrl, linkedInUrl, instagramUrl, twitterUrl } from "@links/index";
+import {
+    gitHubUrl,
+    linkedInUrl,
+    instagramUrl,
+    twitterUrl,
+} from "@/links/index";
 import { motion } from "framer-motion";
 import React from "react";
 import { IconType } from "react-icons";
