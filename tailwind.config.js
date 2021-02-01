@@ -8,11 +8,13 @@ module.exports = {
         extend: {
             colors: {
                 feli: {
-                    lighter: "#ffff8e",
-                    light: "#ffd95d",
+                    lightest: "#feeed6",
+                    lighter: "#fde4bd",
+                    light: "#fbc672",
                     DEFAULT: "#f9a828",
-                    dark: "#c17900",
-                    darker: "#8b4d00",
+                    dark: "#cf8106",
+                    darker: "#845204",
+                    darker: "#6C4303",
                     "opacity-100": "rgba(249, 168, 37, 0.1)",
                     "opacity-200": "rgba(249, 168, 37, 0.2)",
                     "opacity-300": "rgba(249, 168, 37, 0.3)",
