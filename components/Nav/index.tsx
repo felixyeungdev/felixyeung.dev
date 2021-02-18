@@ -1,5 +1,6 @@
 import Icon from "@/components/Icon";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Nav = () => {
     return (
@@ -10,7 +11,7 @@ const Nav = () => {
             <div className="flex items-center justify-center">
                 <Icon className="w-6" fixed />
                 <div className="text-xl sm:text-2xl font-bold ml-4">
-                    Felix Yeung
+                    <Link href="/">Felix Yeung</Link>
                 </div>
             </div>
         </motion.div>
