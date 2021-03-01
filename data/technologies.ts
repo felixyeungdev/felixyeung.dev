@@ -101,6 +101,11 @@ const technologies: Technologies = [
         url: "https://tailwindcss.com/",
     },
     {
+        name: "Storybook",
+        date: new Date("2021/03/01"),
+        url: "https://storybook.js.org/",
+    },
+    {
         name: "Blender",
         date: new Date("2020/02/06"),
         url: "https://www.blender.org/",
