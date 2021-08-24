@@ -2,17 +2,17 @@ import { Technologies } from "@/interfaces/index";
 const technologies: Technologies = [
     {
         name: "HTML",
-        date: new Date("2018/08/06"),
+        date: new Date("2018/08/03"),
         url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     },
     {
         name: "CSS",
-        date: new Date("2018/08/06"),
+        date: new Date("2018/08/03"),
         url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     },
     {
         name: "JavaScript",
-        date: new Date("2018/08/06"),
+        date: new Date("2018/08/03"),
         url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
