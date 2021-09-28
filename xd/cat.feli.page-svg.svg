@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="250" viewBox="0 0 250 250">
+  <defs>
+    <clipPath id="clip-cat.feli.page-svg">
+      <rect width="250" height="250"/>
+    </clipPath>
+  </defs>
+  <g id="cat.feli.page-svg" clip-path="url(#clip-cat.feli.page-svg)">
+    <g id="Group_17" data-name="Group 17" transform="translate(-110 -56)">
+      <rect id="Rectangle_53" data-name="Rectangle 53" width="50" height="50" transform="translate(210 106)" fill="#f9a828"/>
+      <rect id="Rectangle_57" data-name="Rectangle 57" width="50" height="50" transform="translate(160 106)" fill="#f9a828"/>
+      <rect id="Rectangle_66" data-name="Rectangle 66" width="25" height="25" transform="translate(135 106)" fill="#f9a828"/>
+      <rect id="Rectangle_70" data-name="Rectangle 70" width="25" height="25" transform="translate(310 106)" fill="#f9a828"/>
+      <rect id="Rectangle_71" data-name="Rectangle 71" width="25" height="25" transform="translate(310 131)" fill="#f9a828"/>
+      <rect id="Rectangle_72" data-name="Rectangle 72" width="25" height="25" transform="translate(335 131)" fill="#f9a828"/>
+      <path id="Rectangle_78" data-name="Rectangle 78" d="M25,0h0A25,25,0,0,1,50,25V50a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" transform="translate(160 56)" fill="#f9a828"/>
+      <path id="Rectangle_84" data-name="Rectangle 84" d="M25,0h0A25,25,0,0,1,50,25V50a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V25A25,25,0,0,1,25,0Z" transform="translate(260 56)" fill="#f9a828"/>
+      <rect id="Rectangle_67" data-name="Rectangle 67" width="25" height="25" transform="translate(135 131)" fill="#f9a828"/>
+      <rect id="Rectangle_68" data-name="Rectangle 68" width="25" height="25" transform="translate(110 131)" fill="#f9a828"/>
+      <rect id="Rectangle_55" data-name="Rectangle 55" width="50" height="50" transform="translate(210 156)" fill="#f9a828"/>
+      <rect id="Rectangle_63" data-name="Rectangle 63" width="50" height="50" transform="translate(160 156)" fill="#f9a828"/>
+      <rect id="Rectangle_65" data-name="Rectangle 65" width="50" height="50" transform="translate(110 156)" fill="#f9a828"/>
+      <rect id="Rectangle_52" data-name="Rectangle 52" width="50" height="50" transform="translate(260 106)" fill="#f9a828"/>
+      <rect id="Rectangle_54" data-name="Rectangle 54" width="50" height="50" transform="translate(260 156)" fill="#f9a828"/>
+      <rect id="Rectangle_64" data-name="Rectangle 64" width="50" height="50" transform="translate(310 156)" fill="#f9a828"/>
+      <path id="Intersection_7" data-name="Intersection 7" d="M-3264,25a25,25,0,0,1,25-25V25Z" transform="translate(3374 106)" fill="#f9a828"/>
+      <path id="Intersection_9" data-name="Intersection 9" d="M-3264,25a25,25,0,0,1,25-25V25Z" transform="translate(360 3370) rotate(90)" fill="#f9a828"/>
+      <path id="Intersection_8" data-name="Intersection 8" d="M-3189,75h-24.987a24.843,24.843,0,0,0,9.718-1.965,24.911,24.911,0,0,0,7.947-5.358,24.922,24.922,0,0,0,5.358-7.947A24.844,24.844,0,0,0-3189,50h0Z" transform="translate(3348.999 31)" fill="#f9a828"/>
+      <path id="Intersection_12" data-name="Intersection 12" d="M-3189,75h-24.987a24.843,24.843,0,0,0,9.718-1.965,24.911,24.911,0,0,0,7.947-5.358,24.922,24.922,0,0,0,5.358-7.947A24.844,24.844,0,0,0-3189,50h0Z" transform="translate(285 3294.999) rotate(90)" fill="#f9a828"/>
+      <path id="Intersection_10" data-name="Intersection 10" d="M-3189,75h-24.987a24.843,24.843,0,0,0,9.718-1.965,24.911,24.911,0,0,0,7.947-5.358,24.922,24.922,0,0,0,5.358-7.947A24.844,24.844,0,0,0-3189,50h0Z" transform="translate(385 3294.999) rotate(90)" fill="#f9a828"/>
+      <path id="Intersection_11" data-name="Intersection 11" d="M-3189,75h-24.987a24.843,24.843,0,0,0,9.718-1.965,24.911,24.911,0,0,0,7.947-5.358,24.922,24.922,0,0,0,5.358-7.947A24.844,24.844,0,0,0-3189,50h0Z" transform="translate(3448.999 31)" fill="#f9a828"/>
+      <path id="Intersection_13" data-name="Intersection 13" d="M-3264,100A100,100,0,0,1-3164,0V100Z" transform="translate(110 -2958) rotate(-90)" fill="#f9a828"/>
+      <path id="Intersection_14" data-name="Intersection 14" d="M-3264,100A100,100,0,0,1-3164,0V100Z" transform="translate(-2904 306) rotate(180)" fill="#f9a828"/>
+      <rect id="Rectangle_82" data-name="Rectangle 82" width="50" height="50" transform="translate(210 206)" fill="#f9a828"/>
+      <rect id="Rectangle_83" data-name="Rectangle 83" width="50" height="50" transform="translate(210 256)" fill="#f9a828"/>
+      <rect id="Rectangle_86" data-name="Rectangle 86" width="25" height="25" rx="12.5" transform="translate(272.5 168.5)" fill="#fff"/>
+      <rect id="Rectangle_87" data-name="Rectangle 87" width="25" height="25" rx="12.5" transform="translate(172.5 168.5)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
