@@ -110,6 +110,11 @@ const technologies: Technologies = [
         date: new Date("2020/02/06"),
         url: "https://www.blender.org/",
     },
+    {
+        name: "C",
+        date: new Date("2021/09/28"),
+        url: "https://en.wikipedia.org/wiki/C_(programming_language)",
+    },
 ];
 
 export { technologies };
