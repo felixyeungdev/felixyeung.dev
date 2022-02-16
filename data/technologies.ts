@@ -115,6 +115,11 @@ const technologies: Technologies = [
         date: new Date("2021/09/28"),
         url: "https://en.wikipedia.org/wiki/C_(programming_language)",
     },
+    {
+        name: "Java",
+        date: new Date("2022/01/24"),
+        url: "hhttps://java.com/",
+    },
 ];
 
 export { technologies };
