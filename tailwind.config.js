@@ -1,10 +1,8 @@
 module.exports = {
-    purge: [
+    content: [
         "./pages/**/*.{js,ts,jsx,tsx}",
         "./components/**/*.{js,ts,jsx,tsx}",
     ],
-    darkMode: "media", // or 'media' or 'class'
-    mode: "jit",
     theme: {
         extend: {
             colors: {
@@ -57,13 +55,6 @@ module.exports = {
                 "Segoe UI Symbol",
                 "Noto Color Emoji",
             ],
-        },
-    },
-    variants: {
-        extend: {
-            boxShadow: ["active"],
-            textColor: ["active"],
-            backgroundColor: ["active"],
         },
     },
     plugins: [],
