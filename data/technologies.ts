@@ -120,6 +120,11 @@ const technologies: Technologies = [
         date: new Date("2022/01/24"),
         url: "hhttps://java.com/",
     },
+    {
+        name: "Bootstrap",
+        date: new Date("2022/04/14"),
+        url: "https://getbootstrap.com/",
+    },
 ];
 
 export { technologies };
