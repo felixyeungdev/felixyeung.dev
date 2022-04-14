@@ -118,7 +118,7 @@ const technologies: Technologies = [
     {
         name: "Java",
         date: new Date("2022/01/24"),
-        url: "hhttps://java.com/",
+        url: "https://java.com/",
     },
     {
         name: "Bootstrap",
