@@ -125,6 +125,16 @@ const technologies: Technologies = [
         date: new Date("2022/04/14"),
         url: "https://getbootstrap.com/",
     },
+    {
+        name: "jQuery",
+        date: new Date("2022/04/14"),
+        url: "https://jquery.com/",
+    },
+    {
+        name: "Cypress",
+        date: new Date("2022/04/20"),
+        url: "https://www.cypress.io/",
+    },
 ];
 
 export { technologies };
