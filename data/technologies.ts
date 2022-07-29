@@ -135,6 +135,11 @@ const technologies: Technologies = [
         date: new Date("2022/04/20"),
         url: "https://www.cypress.io/",
     },
+    {
+        name: "Jest",
+        date: new Date("2022/05/21"),
+        url: "https://jestjs.io/",
+    },
 ];
 
 export { technologies };
