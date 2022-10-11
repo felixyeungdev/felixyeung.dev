@@ -140,6 +140,11 @@ const technologies: Technologies = [
         date: new Date("2022/05/21"),
         url: "https://jestjs.io/",
     },
+    {
+        name: "C++",
+        date: new Date("2022/10/05"),
+        url: "https://en.wikipedia.org/wiki/C++",
+    },
 ];
 
 export { technologies };
