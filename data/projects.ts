@@ -39,12 +39,14 @@ const projects: Projects = [
             "/assets/images/hw.feli.page_2.png",
             "/assets/images/hw.feli.page_3.png",
         ],
+        deprecated: true,
     },
     {
         name: "Feli URL Shortener",
         description: "Simple URL shortener app with chrome extension available",
         link: "https://url.feli.page/",
         images: ["/assets/images/url.feli.page_1.png"],
+        deprecated: true,
     },
 ];
 

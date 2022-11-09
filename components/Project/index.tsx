@@ -28,27 +28,34 @@ const Project = ({ project, featured = false, reverse }: ProjectProps) => {
                 }
             >
                 {featured && (
-                    <span className="uppercase text-gray-500 dark:text-gray-400 text-center lg:text-left">
+                    <span className="text-center text-gray-500 uppercase dark:text-gray-400 lg:text-left">
                         Featured Project
                     </span>
                 )}
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl text-center lg:text-left font-bold">
+                {project.deprecated && (
+                    <span className="text-center text-gray-500 uppercase dark:text-gray-400 lg:text-left">
+                        Deprecated
+                    </span>
+                )}
+                <h2 className="text-3xl font-bold text-center sm:text-4xl lg:text-5xl lg:text-left">
                     {project.name}
                 </h2>
-                <a
-                    className="text-feli-darker hover:text-feli-dark active:text-feli dark:text-feli-lighter dark:hover:text-feli-light text-center lg:text-left flex items-center justify-center lg:justify-start transition-colors"
-                    target="_blank"
-                    href={project.link}
-                    rel="noreferrer"
-                >
-                    {beautifyLinks(project.link)}
-                    <HiOutlineExternalLink className="ml-2" />
-                </a>
-                <p className="lg:mt-4 lg:w-10/12 text-center lg:text-left text-lg lg:text-xl">
+                {!project.deprecated && (
+                    <a
+                        className="flex items-center justify-center text-center transition-colors text-feli-darker hover:text-feli-dark active:text-feli dark:text-feli-lighter dark:hover:text-feli-light lg:text-left lg:justify-start"
+                        target="_blank"
+                        href={project.link}
+                        rel="noreferrer"
+                    >
+                        {beautifyLinks(project.link)}
+                        <HiOutlineExternalLink className="ml-2" />
+                    </a>
+                )}
+                <p className="text-lg text-center lg:mt-4 lg:w-10/12 lg:text-left lg:text-xl">
                     {project.description}
                 </p>
             </div>
-            <div className="lg:w-1/2 flex">
+            <div className="flex lg:w-1/2">
                 {project.images.map((img, i) => (
                     <div
                         key={img}
@@ -58,7 +65,7 @@ const Project = ({ project, featured = false, reverse }: ProjectProps) => {
                                 : "p-1 lg:p-2 w-1/3"
                         }
                     >
-                        <div className="rounded-lg lg:rounded-xl shadow-md lg:shadow-lg w-full overflow-hidden">
+                        <div className="w-full overflow-hidden rounded-lg shadow-md lg:rounded-xl lg:shadow-lg">
                             <Image
                                 src={img}
                                 alt={`${project.name} screenshot ${i + 1}`}

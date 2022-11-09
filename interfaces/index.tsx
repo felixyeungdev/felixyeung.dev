@@ -10,6 +10,7 @@ export type Project = {
     link: string;
     description: string;
     images: string[];
+    deprecated?: boolean;
 };
 
 export type Projects = Project[];
